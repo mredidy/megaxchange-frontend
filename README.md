@@ -1,24 +1,77 @@
-Welcome to the NextJS base template bootstrapped using the `create-next-app`. This template supports TypeScript, but you can use normal JavaScript as well.
+# MegaXchange Frontend
 
-## Getting Started
+## Overview
 
-Hit the run button to start the development server.
+MegaXchange is a decentralized bridge application that allows users to send Ethereum from the Sepolia testnet to the MegaETH testnet. The frontend application is built with **React** and hosted on **Vercel**, providing a seamless user experience for bridging ETH between testnets.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on `/api/hello`. This endpoint can be edited in `pages/api/hello.ts`.
+- **Input Field**: Users can input a Sepolia transaction hash.
+- **Status Display**: Real-time feedback on transaction status.
+- **Transaction Validation**: Validates Sepolia transactions before attempting to mint equivalent ETH on MegaETH.
+- **Responsive Design**: Optimized for desktop and mobile use.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Technologies Used
 
-## Learn More
+- **React**: JavaScript library for building user interfaces.
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **Vercel**: Platform for hosting and deploying the frontend application.
 
-To learn more about Next.js, take a look at the following resources:
+## Setup and Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the Repository**
 
-## Productionizing your Next App
+    ```bash
+    git clone https://github.com/mredidy/megaxchange-frontend.git
+    ```
 
-To make your next App run smoothly in production make sure to deploy your project with [Repl Deployments](https://docs.replit.com/hosting/deployments/about-deployments)!
+2. **Navigate to the Project Directory**
 
-You can also produce a production build by running `npm run build` and [changing the run command](https://docs.replit.com/programming-ide/configuring-repl#run) to `npm run start`.
+    ```bash
+    cd megaxchange-frontend
+    ```
+
+3. **Install Dependencies**
+
+    Ensure you have **Node.js** and **npm** installed. Then run:
+
+    ```bash
+    npm install
+    ```
+
+4. **Run the Application Locally**
+
+    Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+    The application will be available at `http://localhost:3000` in your browser.
+
+5. **Deploy to Vercel**
+
+    - Push the code to your GitHub repository.
+    - Connect your GitHub repository to **Vercel** and deploy.
+
+    After deployment, Vercel will provide a public URL where the application is live.
+
+## Project Structure
+
+- `pages/`: Contains all the pages in the application, including the main bridge page.
+- `components/`: Reusable components like `TransactionInput`, `StatusMessage`.
+- `styles/`: Custom CSS and styling files for the application.
+- `public/`: Static assets such as images and icons.
+
+## Contributing
+
+If you wish to contribute to the development of MegaXchange, feel free to fork the repository and submit pull requests. We encourage improvements and enhancements.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or inquiries, please contact us at:  
+**Email**: misteredidy@gmail.com
