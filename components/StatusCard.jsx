@@ -5,7 +5,7 @@ export default function StatusCard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('https://megaxchange-backend.onrender.com/status')
+    fetch('https://megaxchange-backend.onrender.com/api/status')
       .then(res => res.json())
       .then(data => {
         setStatus(data);
